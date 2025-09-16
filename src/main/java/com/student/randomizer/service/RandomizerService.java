@@ -10,6 +10,6 @@ public class RandomizerService {
     private Random random = new Random();
 
     public int getRandomValue(int from, int to) {
-        return random.nextInt(to - from) + from;
+        return random.nextInt(to - from + 1) + from;
     }
 }
