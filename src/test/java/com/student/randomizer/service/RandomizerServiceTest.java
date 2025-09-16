@@ -14,9 +14,4 @@ class RandomizerServiceTest {
         assertThat(randomizerService.getRandomValue(1, 2)).isBetween(1, 2);
         assertThat(randomizerService.getRandomValue(-1, 0)).isBetween(-1, 0);
     }
-
-    @Test
-    void failedTest() {
-        assertThat(randomizerService.getRandomValue(1, 3)).isLessThan(1);
-    }
 }
